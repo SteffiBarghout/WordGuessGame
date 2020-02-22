@@ -3,5 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    </head>
+    <title>Word Guess Game</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" text="text/css" href="assets/stylesheet.css">
+    
+</head>
+    
+<body>
+
+    <div id = "container">
+
+        <div class="background">
+            <img src="assets/artdeco.jpg" alt="artdeco"> 
+        </div>
+
+        <div class = "panel">
+            <h2>Press Any Key to Get Started!</h2>
+            <br>
+            <hr id="divider">
+            <br>
+            <button id="newGameButton" onclick="newGame()">NEW GAME</button>
+        </div>
+
+        <div class = "panel">
+            <h3 id="guess-text">Enter your guess below and press Enter</h3>
+            <br>
+            <input type = "letter" id="inputBox" onchange="compareGuess()" autocomplete="off">
+            <br>
+            <br>
+            <p>Number of Previous Attempts: <span id="attempts"></span></p>
+            <br>
+            <p>Your Previous Guesses: </p>
+            <p id = "guessLog"> </p> 
+        </div>
+
+        <div class ="panel">
+            <p>Total Wins: </p>
+            <p id = "winLog"> </p> 
+            <br>
+            <p>Total Losses: </p>
+            <p id = "loseLog"> </p> 
+        </div>
+    </div>
+
+    <script src="wordguessgame.js"></script>
+
+</body>
+</html>
