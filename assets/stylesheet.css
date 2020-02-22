@@ -1,0 +1,22 @@
+body{
+    background-image:url(artdeco.jpg);
+}
+.panel{
+    position:absolute;
+    left:30%;
+    color:#ffff;
+
+}
+.panel1{
+    position:absolute;
+    top:20%;
+    left:30%;
+    color:#ffff
+}
+
+.panel2{
+    position:absolute;
+    top: 50%;
+    left:30%;
+    color:#ffff
+}
