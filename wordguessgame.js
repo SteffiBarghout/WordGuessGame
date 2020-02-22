@@ -7,4 +7,8 @@ $(document).ready(function() {
         letterBtn.text(letters[i]);
         $("#buttons").append(letterBtn);
     }
-})
+    $(".letter-button").on("click", function() {
+        var letterButton = $("<div>");
+        letterButton.addClass("letter Button-color");
+    })
+});
